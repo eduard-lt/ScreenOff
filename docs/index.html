@@ -129,14 +129,12 @@
   .card {
     background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius);
     padding: 22px;
+    display: grid; grid-template-columns: 20px 1fr; column-gap: 12px; align-content: start;
   }
-  .card .ic {
-    width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center;
-    background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); margin-bottom: 14px;
-  }
-  .card .ic svg { width: 20px; height: 20px; }
+  .card .ic { color: var(--accent); padding-top: 2px; }
+  .card .ic svg { width: 20px; height: 20px; display: block; }
   .card h3 { margin: 0 0 6px; font-size: 16px; }
-  .card p { margin: 0; color: var(--muted); font-size: 14.5px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14.5px; grid-column: 2; }
 
   .steps { counter-reset: s; display: grid; gap: 12px; max-width: 680px; }
   .step {
