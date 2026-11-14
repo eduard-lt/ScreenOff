@@ -6,7 +6,7 @@ ScreenOff is a tiny Windows tray app for multi-monitor setups. Click its tray ic
 
 Windows never sees the monitor disconnect, so your windows stay exactly where they were. There's no "PC screen only" shuffle.
 
-👉 **[Website](https://eduard-lt.github.io/ScreenOff/)** · **[Download](https://github.com/eduard-lt/ScreenOff/releases/latest)**
+👉 **[Website](https://eduard-lt.github.io/ScreenOff/)** · **[Download](https://github.com/eduard-lt/ScreenOff/releases/latest)** · **[♥ Support on Ko-fi](https://ko-fi.com/eduardolteanu)**
 
 ## Features
 
@@ -37,6 +37,10 @@ Any MinGW-w64 clang/gcc works, for example the one bundled with [Windhawk](https
 ```bash
 clang++ -std=c++23 -O2 -static -mwindows -municode -DUNICODE -D_UNICODE ScreenOff.cpp -o ScreenOff.exe -ldxva2 -lshell32 -lgdi32 -luser32 -ladvapi32
 ```
+
+## Support
+
+ScreenOff is free. If it's useful to you, you can [buy me a coffee on Ko-fi](https://ko-fi.com/eduardolteanu) ♥
 
 ## License
 
